@@ -1,5 +1,9 @@
 ---@type ChadrcConfig 
  local M = {}
- M.ui = {theme = 'chocolate'}
+ M.ui = {
+  transparency = true,
+  theme = 'chocolate',
+  theme_toggle = { 'chadtain', 'catppuccin'}
+}
  M.plugins = 'custom.plugins'
  return M
