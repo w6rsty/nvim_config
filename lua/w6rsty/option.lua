@@ -1,8 +1,8 @@
 -- theme
-vim.o.background = "dark"
-vim.cmd [[colorscheme gruvbox]]
+vim.o.background = ""
+vim.cmd [[colorscheme onedark]]
 
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.number = true
 
 vim.opt.tabstop = 4
@@ -28,3 +28,6 @@ vim.opt.hlsearch = true
 vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
+
+vim.opt.colorcolumn = "80"
+vim.cmd [[highlight ColorColumn ctermbg=0 guibg=grey]]

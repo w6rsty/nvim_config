@@ -25,8 +25,23 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- split window
-vim.keymap.set("n", "<leader>sv", "<C-w>v")  
+vim.keymap.set("n", "<leader>sv", "<C-w>v")
 vim.keymap.set("n", "<leader>sh", "<C-w>s")
 
 -- cancel search highlight
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
+
+-- open diagnostic
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+-- list all diagnostics
+vim.keymap.set("n", "<leader>ld", vim.diagnostic.setloclist, opts)
+-- go to definition
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
+-- go to implementation
+vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, opts)
+-- list all references
+vim.keymap.set("n", "<leader>lr", vim.lsp.buf.references, opts)
+-- list rename symbol
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+-- code action
+vim.keymap.set("n", "<leader>fi", vim.lsp.buf.code_action, opts)

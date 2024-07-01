@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   }
 
   use { "ellisonleao/gruvbox.nvim" }
+  use { 'navarasu/onedark.nvim' }
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('p00f/nvim-ts-rainbow')
@@ -50,6 +51,8 @@ return require('packer').startup(function(use)
 	  }
   }
   use {"akinsho/toggleterm.nvim", tag = '*'}
+
+  use ('numToStr/Comment.nvim')
 
   if packer_bootstrap then
     require('packer').sync()
