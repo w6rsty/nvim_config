@@ -5,7 +5,7 @@ if not status_ok then
     return
 end
 
-toggleterm.setup{
+toggleterm.setup {
     hide_numbers = true,
     start_in_insert = true,
     float_opts = {

@@ -32,10 +32,12 @@ require('mason-lspconfig').setup({
                 }
 			})
 		end,
-        cmake = function()
-            require('lspconfig').cmake.setup({
-
-            })
-        end,
 	},
 })
+
+vim.keymap.set(
+    "n", "<leader>h",
+    function()
+      vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+    end
+)

@@ -1,6 +1,7 @@
 -- theme
 vim.o.background = ""
 vim.cmd [[colorscheme onedark]]
+vim.cmd [[highlight ColorColumn ctermbg=0 guibg=grey]]
 
 vim.opt.relativenumber = false
 vim.opt.number = true
@@ -30,4 +31,3 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
-vim.cmd [[highlight ColorColumn ctermbg=0 guibg=grey]]
